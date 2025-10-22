@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy and low-maintenance plant that thrives in low light. Excellent for improving indoor air quality by removing toxins.",
+    "image": "https://unsplash.com/photos/green-plant-on-white-ceramic-pot-gzu-etcMXKw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 22,
+    "rating": 4.7,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "A graceful indoor plant with white flowers that bloom year-round. Ideal for bright, indirect sunlight and regular watering.",
+    "image": "https://i.postimg.cc/3xg0XFtL/peace-lily.png",
+    "providerName": "NatureNest"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Aloe Vera",
+    "category": "Succulent",
+    "price": 15,
+    "rating": 4.9,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "A healing plant known for its medicinal properties. Needs minimal watering and lots of sunlight — perfect for sunny windowsills.",
+    "image": "https://i.postimg.cc/T1mZJqZk/aloe-vera.png",
+    "providerName": "Leaf & Love"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Spider Plant",
+    "category": "Hanging Plant",
+    "price": 16,
+    "rating": 4.6,
+    "availableStock": 14,
+    "careLevel": "Easy",
+    "description": "An elegant hanging plant with arching green and white leaves. Known for purifying air and being pet-friendly.",
+    "image": "https://i.postimg.cc/V6rR4L9v/spider-plant.png",
+    "providerName": "GreenAura Hub"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Rubber Plant",
+    "category": "Decorative",
+    "price": 28,
+    "rating": 4.8,
+    "availableStock": 6,
+    "careLevel": "Medium",
+    "description": "A bold, glossy-leafed plant that adds a modern touch to any home decor. Prefers bright light and occasional watering.",
+    "image": "https://i.postimg.cc/3wbDGH8L/rubber-plant.png",
+    "providerName": "EcoLeaf Studio"
+  },
+  {
+    "plantId": 6,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 20,
+    "rating": 4.9,
+    "availableStock": 9,
+    "careLevel": "Very Easy",
+    "description": "A nearly indestructible indoor plant that grows well even in low light. Perfect for beginners or busy plant lovers.",
+    "image": "https://i.postimg.cc/1RVLRHDM/zz-plant.png",
+    "providerName": "The Green Den"
+  }
+]
