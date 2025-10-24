@@ -73,19 +73,19 @@
   },
   {
     "plantId": 7,
-    "plantName": "ZZ Plant",
+    "plantName": "Laceleaf",
     "category": "Low Light",
     "price": 20,
     "rating": 4.9,
-    "availableStock": 9,
+    "availableStock": 19,
     "careLevel": "Very Easy",
     "description": "A nearly indestructible indoor plant that grows well even in low light. Perfect for beginners or busy plant lovers.",
     "image": "/public/assets/zz.png",
     "providerName": "The Green Den"
   },
    {
-    "plantId": 1,
-    "plantName": "Snake Plant",
+    "plantId": 8,
+    "plantName": "Zanzibar Gem",
     "category": "Air Purifier",
     "price": 18,
     "rating": 4.8,
@@ -96,8 +96,8 @@
     "providerName": "UrbanGreen Studio"
   },
    {
-    "plantId": 4,
-    "plantName": "Spider Plant",
+    "plantId": 9,
+    "plantName": "Swiss cheese plant",
     "category": "Hanging Plant",
     "price": 16,
     "rating": 4.6,
