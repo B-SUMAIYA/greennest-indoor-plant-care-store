@@ -52,7 +52,7 @@ const Navbar = () => {
             {user ? (
               <div className='dropdown dropdown-end '>
                 <div tabIndex={0} role='button' className='btn btn-ghost flex items-center gap-2 '>
-                  <img  src={user?.photoURL || "/public/assets/user.png"} alt="avatar" className='w-8 h-8 rounded-full ' />
+                  <img  src={user?.photoURL || "/assets/user.png"} alt="avatar" className='w-8 h-8 rounded-full ' />
                   <span className='border-amber-600'>{user.displayName || 'user'}</span>
                   </div>
                   <ul tabIndex={0} className='menu menu-sm  bg-base-100 rounded-box mt-3 w-40 shadow'>

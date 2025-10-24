@@ -45,7 +45,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AuthProvider> <RouterProvider router={router}></RouterProvider></AuthProvider>
+    <AuthProvider> <RouterProvider router={router} hydrateFallbackElement={<h2>Loading....</h2>} />
+    </AuthProvider>
    
   </StrictMode>,
 )

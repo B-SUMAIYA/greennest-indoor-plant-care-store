@@ -1,4 +1,4 @@
-//import { div } from 'framer-motion/client';
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import bgPlant1 from '/assets/bgPlant1.png';
 import bgPlant2 from '/assets/bgPlant2.png'
-//import { div } from 'framer-motion/client';
+
 const Home = () => {
        const [plants, setPlants] = useState([]);
     useEffect(() => {
@@ -45,13 +45,13 @@ Explore plants</Link>
           <div className='hero min-h-[70vh] bg-cover bg-center' style={{ backgroundImage: `url(${bgPlant2})` }}>
                  <h1 className='font-bold text-2xl'>Fresh Air Green Vibes</h1>
                          <div className='mt-25 '>
-                            <p>Breath cleaner air with our air purifying plants.
+                            <p>Breath cleaner air with our air purifying plants. </p>
                                     <div className='mt-3'>
                                          <Link to="/plants" className=' bg-green-500 px-3 py-2 rounded-md text-white font-semibold hover:bg-green-800 transition'>
                                     Shop Now
                                 </Link> 
                                     </div>   
-                        </p>
+                       
                         </div>
                         </div>
                        
@@ -108,21 +108,21 @@ Explore plants</Link>
                     <h1 className='text-3xl font-bold text-green-600 mb-3'>Plants Of The Week</h1>
                     <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
                         <div className='p-6 rounded-2xl shadow bg-green-200 '>
-                            <img src="/public/assets/aloevera.png" alt="Aloevra" />
+                            <img src="/assets/aloevera.png" alt="Aloevra" />
                             <h3 className='font-bold text-2xl mb-2 text-green-500'>Aloevera</h3>
                             <p className='font-bold'>Why is aloe so popular?</p>
                             <p className='text-gray-700'>Its thick, spiny leaves are a rich composition of water, enzymes, vitamins, minerals, sugars, and amino acids that come together for some seriously synergistic healing</p>
 
                         </div>
                         <div className='p-6 rounded-2xl shadow  bg-green-200'>
-                           <img src="/public/assets/peacelily.png" alt="Peace Lily" />
+                           <img src="/assets/peacelily.png" alt="Peace Lily" />
                             <h3 className='font-bold text-2xl mb-2 text-pink-500'>Peacelily</h3>
                             <p className='font-bold'>why people choose peace lily flower?</p>
                             <p className='text-gray-600'>Peace lily, adored for its elegant broad green leaves and white flowers, holds profound meaning, symbolism, and spiritual significance. As a symbol of peace, tranquility, and purity, it has become a popular choice among both indoor and outdoor gardeners. </p>
 
                         </div>
                         <div className='p-6 rounded-2xl shadow bg-green-200'>
-                             <img src="/public/assets/rubberPlant.png" alt="Peace Lily" />
+                             <img src="/assets/rubberPlant.png" alt="Peace Lily" />
                             <h3 className='font-bold text-2xl mb-2 text-pink-800'>Peacelily</h3>
                             <p className='font-bold'>Why is rubber so important?</p>
                             <p className='text-gray-600'>Rubber plants produce oxygen and can remove up to 60% of air toxins, including mold spores and bacteria. They can also filter out common indoor pollutants like formaldehyde, benzene, and carbon monoxide. Low maintenance: Rubber plants are easy to grow and require low maintenance. </p>
@@ -138,19 +138,19 @@ Explore plants</Link>
                     <h1 className='text-2xl font-bold text-blue-800 mb-6'>Meet Our Green Expert</h1>
                     <div className="flex flex-col md:flex-row justify-between gap-4  items-center ">
                         <div className='p-6 bg-black mb-4 rounded-2xl shadow '>
-                            <img src="/public/assets/specialist1.png" alt="" className='object-cover h-full w-full'/>
+                            <img src="/assets/specialist1.png" alt="" className='object-cover h-full w-full'/>
                             <h3 className='font-semibold text-lg mb-2 text-blue-700'>Dr. jane Hutto</h3>
                             <p className='text-gray-500'>They Are specialist in planting and taking care of fruits ,flower , vegitable and Tress</p>
 
                         </div>
                         <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
-                            <img src="/public/assets/specialist2.png" alt="" className='object-cover h-full w-full'/>
+                            <img src="/assets/specialist2.png" alt="" className='object-cover h-full w-full'/>
                             <h3 className='font-semibold text-lg mb-2 text-blue-700'>Luthar brukbhan</h3>
                             <p className='text-gray-500'>They study the structure, Growth, reprroduction, and role of plants in the Enviroment</p>
 
                         </div>
                         <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
-                            <img src="/public/assets/specialist3.png" alt="" className='object-cover h-full w-full'/>
+                            <img src="/assets/specialist3.png" alt="" className='object-cover h-full w-full'/>
                             <h3 className='font-semibold text-lg mb-2 text-blue-700'>Peter Thomas</h3>
                             <p className='text-gray-500'>They work on tree health , pruning ,planting, and desease management</p>
 
