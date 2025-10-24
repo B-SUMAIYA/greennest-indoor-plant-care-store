@@ -67,7 +67,7 @@ const Signup = () => {
            <label className='text-xl font-bold'>Email</label>
          <input placeholder='example@email.com' name='email' type='email' required className='w-full border px-3 py-3 rounded required text-sm' />
          <label className='font-bold text-xl'>PhotoUrl</label>
-         <input placeholder='Phtourl ' name='photo' className='w-full mt-2 border px-3 py-3 rounded text-sm' />
+         <input required placeholder='Phtourl ' name='photo' className='w-full mt-2 border px-3 py-3 rounded text-sm' />
       </div>
         <div className="">
           <label placeholder='Password' className='text-xl font-bold'>Password</label>
@@ -79,9 +79,7 @@ const Signup = () => {
           </div>
           <p className='text-xs text-gray-500 mt-1'>Password Must be ≥6 character, include uppercase & lowercase letter.</p>
        </div>
-       <button disabled={loading}>
-         
-       </button>
+       
         <button className='bg-green-600  text-white px-4 py-2  rounded'>Register</button>
       </form>
       <div className='mt-4'>

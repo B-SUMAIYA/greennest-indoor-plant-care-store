@@ -20,7 +20,7 @@ const Profile = () => {
     <div className='max-w-md mx-auto bg-white p-6 rounded shadow mt-8 '>
       <h2 className='text-2xl font-bold'>My Profile</h2>
       <div className="mt-4 flex items-center gap-4">
-        <img src={user?.photoURL || "/public/assets/user.png"} alt="avatar" className='h-16 w-16 rounded-full object-cover' />
+        <img src={user?.photoURL || "/assets/user.png"} alt="avatar" className='h-16 w-16 rounded-full object-cover' />
         <div>
           <p className='font-medium'>{ user?.displayName || "no name"} </p>
           <p className='text-sm text-gray-600'>{ user?.email}</p>
