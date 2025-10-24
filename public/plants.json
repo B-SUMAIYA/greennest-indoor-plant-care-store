@@ -80,7 +80,7 @@
     "availableStock": 19,
     "careLevel": "Very Easy",
     "description": "A nearly indestructible indoor plant that grows well even in low light. Perfect for beginners or busy plant lovers.",
-    "image": "/public/assets/zz.png",
+    "image": "/public/assets/Laceleaf.png",
     "providerName": "The Green Den"
   },
    {
@@ -92,7 +92,7 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "A hardy and low-maintenance plant that thrives in low light. Excellent for improving indoor air quality by removing toxins.",
-    "image": "/public/assets/snakePlant.png",
+    "image": "/public/assets/ZanzibarGem.png",
     "providerName": "UrbanGreen Studio"
   },
    {
@@ -104,7 +104,7 @@
     "availableStock": 14,
     "careLevel": "Easy",
     "description": "An elegant hanging plant with arching green and white leaves. Known for purifying air and being pet-friendly.",
-    "image": "/public/assets/spiderPlant.png",
+    "image": "/public/assets/SwissCheesePlant.png",
     "providerName": "GreenAura Hub"
   }
 
