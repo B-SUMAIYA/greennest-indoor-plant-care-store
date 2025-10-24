@@ -19,7 +19,8 @@ const Home = () => {
         )
     })
     return (
-     <div className='space-y-20 mt-4'>
+        <div className='space-y-20 mt-4'>
+           
      <section className='relative'>
     <Swiper modules={[Autoplay, Pagination]} autoplay={{ delay: 3000 }} pagination={{ clickable: true }} loop={true} className='rounded-xl shadow-md'>
     <SwiperSlide>
@@ -157,9 +158,7 @@ Explore plants</Link>
                         </div>
                     </div>
                 </div>
-            </section>
-        
-            
+            </section>       
     </div>
     );
 };
