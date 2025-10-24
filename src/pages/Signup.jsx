@@ -5,8 +5,9 @@ import toast from 'react-hot-toast';
 import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 
 const Signup = () => {
-  const { register, updateUser, googleLogin } = useContext(AuthContext);
+  const { register, updateUser, googleLogin,setUser } = useContext(AuthContext);
   const [showPass, setShowPass] = useState(false);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const validatePassword = (pass) => {
     if (pass.length <6)
@@ -19,7 +20,8 @@ const Signup = () => {
 
   };
  const handleSubmit = async (e) => {
-    e.preventDefault();
+   e.preventDefault();
+   setLoading(true);
     const name = e.target.name?.value || "";
     const email = e.target.email.value;
     const photo = e.target.photo?.value || "";
@@ -31,13 +33,16 @@ const Signup = () => {
     }
      try {
     const cred = await register(email, password);
-    await updateUser({ displayName: name, photoURL: photo });
+       await updateUser({ displayName: name, photoURL: photo });
+       setUser({...cred.user, displayName: name, photoURL: photo })
     toast.success('Succefull Registration');
     navigate("/");
 
   } catch (err) {
     toast.error(err.message || 'SignUp failed');
 
+     } finally {
+       setLoading(false);
   }
   }
   const handleGoogle = async () => {
@@ -60,18 +65,23 @@ const Signup = () => {
         </div>
         <div className="">
            <label className='text-xl font-bold'>Email</label>
-          <input placeholder='example@email.com' name='email' type='email' required className='w-full border px-3 py-3 rounded required text-sm' />
+         <input placeholder='example@email.com' name='email' type='email' required className='w-full border px-3 py-3 rounded required text-sm' />
+         <label className='font-bold text-xl'>PhotoUrl</label>
+         <input placeholder='Phtourl ' name='photo' className='w-full mt-2 border px-3 py-3 rounded text-sm' />
       </div>
         <div className="">
           <label placeholder='Password' className='text-xl font-bold'>Password</label>
           <div className='relative'>
-            <input name='password' type={showPass? "text" : "password"} className='w-full border px-3 py-2 rounded text-sm' required />
+            <input placeholder='...............' name='password' type={showPass? "text" : "password"} className='w-full border px-3 py-2 rounded text-sm' required />
            
             <button type='button' onClick={() => setShowPass(s => !s)} className='absolute right-2 top-2 text-sm '> { showPass? <FaEye></FaEye> :<FaEyeSlash></FaEyeSlash>  }</button>
 
           </div>
           <p className='text-xs text-gray-500 mt-1'>Password Must be ≥6 character, include uppercase & lowercase letter.</p>
-        </div>
+       </div>
+       <button disabled={loading}>
+         
+       </button>
         <button className='bg-green-600  text-white px-4 py-2  rounded'>Register</button>
       </form>
       <div className='mt-4'>
