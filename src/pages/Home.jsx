@@ -83,20 +83,20 @@ Explore plants</Link>
             <section className='bg-green-500 py-10'>
                 <div className='container mx-auto text-center px-4'>
                     <h1 className='text-2xl font-bold text-green-800 mb-6'>-Plants Care Tips-</h1>
-                    <div className="gird md:grid-cols-3  items-center ">
+                    <div className="flex flex-col md:flex-row gap-2 items-center ">
                         <div className='p-6 bg-gray-600 mb-4 rounded-2xl shadow '>
                             <h3 className='font-semibold text-lg mb-2 text-yellow-400'>Sunlight</h3>
-                            <p>Place your plants near windows for bright , indirect sunlight</p>
+                            <p className='text-white font-bold'>Place your plants near windows for bright , indirect sunlight</p>
 
                         </div>
                         <div className='p-6  bg-gray-600 mb-4 rounded-2xl shadow'>
                             <h3 className='font-semibold text-lg mb-2 text-blue-500'>Watering</h3>
-                            <p>Most Indoor plants prefer slightly most soil. Avoid overwatering</p>
+                            <p className='text-white font-bold'>Most Indoor plants prefer slightly most soil. Avoid overwatering</p>
 
                         </div>
                         <div className='p-6  bg-gray-600 mb-4 rounded-2xl shadow'>
                             <h3 className='font-semibold text-lg mb-2 text-green-200'>Fertilizing</h3>
-                            <p>Use Organic fertilizing every 4-6 week for lush , green growth</p>
+                            <p className='text-white font-bold'>Use Organic fertilizing every 4-6 week for lush , green growth</p>
 
                         </div>
                     </div>
@@ -130,7 +130,33 @@ Explore plants</Link>
             </section>
             {/* plant of the week */}
             <section>
-               <h1 className='text-3xl font-bold text-green-600'>Plant Of The Week</h1>
+                 <div className='container mx-auto text-center px-4 '>
+                    <h1 className='text-3xl font-bold text-green-600 mb-3'>Plants Of The Week</h1>
+                    <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
+                        <div className='p-6 rounded-2xl shadow bg-green-200 '>
+                            <img src="/public/assets/aloevera.png" alt="Aloevra" />
+                            <h3 className='font-bold text-2xl mb-2 text-green-500'>Aloevera</h3>
+                            <p className='font-bold'>Why is aloe so popular?</p>
+                            <p className='text-gray-700'>Its thick, spiny leaves are a rich composition of water, enzymes, vitamins, minerals, sugars, and amino acids that come together for some seriously synergistic healing</p>
+
+                        </div>
+                        <div className='p-6 rounded-2xl shadow  bg-green-200'>
+                           <img src="/public/assets/peacelily.png" alt="Peace Lily" />
+                            <h3 className='font-bold text-2xl mb-2 text-pink-500'>Peacelily</h3>
+                            <p className='font-bold'>why people choose peace lily flower?</p>
+                            <p className='text-gray-600'>Peace lily, adored for its elegant broad green leaves and white flowers, holds profound meaning, symbolism, and spiritual significance. As a symbol of peace, tranquility, and purity, it has become a popular choice among both indoor and outdoor gardeners. </p>
+
+                        </div>
+                        <div className='p-6 rounded-2xl shadow bg-green-200'>
+                             <img src="/public/assets/rubberPlant.png" alt="Peace Lily" />
+                            <h3 className='font-bold text-2xl mb-2 text-pink-800'>Peacelily</h3>
+                            <p className='font-bold'>Why is rubber so important?</p>
+                            <p className='text-gray-600'>Rubber plants produce oxygen and can remove up to 60% of air toxins, including mold spores and bacteria. They can also filter out common indoor pollutants like formaldehyde, benzene, and carbon monoxide. Low maintenance: Rubber plants are easy to grow and require low maintenance. </p>
+
+                        </div>
+                    </div>
+                </div>
+                
             </section>
             
     </div>
