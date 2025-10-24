@@ -5,8 +5,8 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
-import bgPlant1 from '../assets/bgPlant1.png';
-import bgPlant2 from '../assets/bgPlant2.png'
+import bgPlant1 from '/assets/bgPlant1.png';
+import bgPlant2 from '/assets/bgPlant2.png'
 //import { div } from 'framer-motion/client';
 const Home = () => {
        const [plants, setPlants] = useState([]);
@@ -19,7 +19,7 @@ const Home = () => {
         )
     })
     return (
-     <div className='space-y-20'>
+     <div className='space-y-20 mt-4'>
      <section className='relative'>
     <Swiper modules={[Autoplay, Pagination]} autoplay={{ delay: 3000 }} pagination={{ clickable: true }} loop={true} className='rounded-xl shadow-md'>
     <SwiperSlide>
@@ -59,8 +59,8 @@ Explore plants</Link>
  </Swiper>
             </section>
             {/* plants */}
-            <section className='container mx-auto px-4'>
-                <h2>Your Indoor Plants</h2>
+            <section className='mt-2 container mx-auto px-4'>
+                <h2 className='font-bold text-2xl text-green-600 mb-2'>Your Indoor Plants</h2>
 
                 <div className='grid gap-8 md:grid-cols-3 sm:grid-cols-2'>
                     {plants.slice(0, 6).map((plant) => (
@@ -101,6 +101,36 @@ Explore plants</Link>
                         </div>
                     </div>
                 </div>
+            </section>
+            {/* specialist */}
+            <section>
+             <div className=' container mx-auto text-center px-4 '>
+                    <h1 className='text-2xl font-bold text-blue-800 mb-6'>Meet Our Green Expert</h1>
+                    <div className="flex flex-col md:flex-row justify-between gap-4  items-center ">
+                        <div className='p-6 bg-black mb-4 rounded-2xl shadow '>
+                            <img src="/public/assets/specialist1.png" alt="" className='object-cover h-full w-full'/>
+                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Dr. jane Hutto</h3>
+                            <p className='text-gray-500'>They Are specialist in planting and taking care of fruits ,flower , vegitable and Tress</p>
+
+                        </div>
+                        <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
+                            <img src="/public/assets/specialist2.png" alt="" className='object-cover h-full w-full'/>
+                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Luthar brukbhan</h3>
+                            <p className='text-gray-500'>They study the structure, Growth, reprroduction, and role of plants in the Enviroment</p>
+
+                        </div>
+                        <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
+                            <img src="/public/assets/specialist3.png" alt="" className='object-cover h-full w-full'/>
+                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Peter Thomas</h3>
+                            <p className='text-gray-500'>They work on tree health , pruning ,planting, and desease management</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* plant of the week */}
+            <section>
+               <h1 className='text-3xl font-bold text-green-600'>Plant Of The Week</h1>
             </section>
             
     </div>

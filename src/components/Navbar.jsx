@@ -3,7 +3,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { FaCircleUser } from 'react-icons/fa6';
 import { PiPlant } from 'react-icons/pi';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
 
 const Navbar = () => {
@@ -24,13 +24,13 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><Link to='/'>Home</Link></li>
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow">
+        <li><NavLink to='/'>Home</NavLink></li>
         <li>
-          <Link to='/Plants'>Plants</Link> 
+          <NavLink to='/Plants'>Plants</NavLink> 
           
         </li>
-        <li><Link to="/Profile">My Profile</Link></li>
+        <li><NavLink to="/Profile">My Profile</NavLink></li>
       </ul>
                 </div>
                 
@@ -39,21 +39,21 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className='font-bold'><Link to='/'>Home</Link></li>
+      <li className='font-bold'><NavLink to='/'>Home</NavLink></li>
       <li className='font-bold' >
-       <Link to="/Plants">Plants</Link>
+       <NavLink to="/Plants">Plants</NavLink>
       </li>
-      <li className='font-bold'><Link to="/Profile">My Profile</Link></li>
+      <li className='font-bold'><NavLink to="/Profile">My Profile</NavLink></li>
     </ul>
   </div>
         <div className="navbar-end">
     
           <div>
             {user ? (
-              <div className='dropdown dropdown-end'>
-                <div tabIndex={0} role='button' className='btn btn-ghost flex items-center gap-2'>
-                  <img src={user.displayName || "https://i.ibb.co/zGwLrD1/default-avatar.png"} alt="avatar" className='w-8 h-8 rounded-full' />
-                  <span>{user.displayName || 'user'}</span>
+              <div className='dropdown dropdown-end '>
+                <div tabIndex={0} role='button' className='btn btn-ghost flex items-center gap-2 '>
+                  <img  src={user?.photoURL || "/public/assets/user.png"} alt="avatar" className='w-8 h-8 rounded-full ' />
+                  <span className='border-amber-600'>{user.displayName || 'user'}</span>
                   </div>
                   <ul tabIndex={0} className='menu menu-sm  bg-base-100 rounded-box mt-3 w-40 shadow'>
                     <li><button onClick={handleLogout} className='text-red-500'>Logout</button></li>

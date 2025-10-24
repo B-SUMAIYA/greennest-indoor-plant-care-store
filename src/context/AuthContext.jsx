@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
         return () => unsub();
     }, []);
     return (
-        <AuthContext.Provider value={{ user, loading, googleLogin, logout, login, register, updateUser, resetPass }}>
+        <AuthContext.Provider value={{ user, loading, googleLogin, logout, login, register, updateUser, resetPass, setUser }}>
             {children}
 
         </AuthContext.Provider>

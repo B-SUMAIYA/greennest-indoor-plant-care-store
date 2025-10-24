@@ -8,7 +8,7 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "A hardy and low-maintenance plant that thrives in low light. Excellent for improving indoor air quality by removing toxins.",
-    "image": "https://unsplash.com/photos/green-plant-on-white-ceramic-pot-gzu-etcMXKw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
+    "image": "/public/assets/snakePlant.png",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -20,7 +20,7 @@
     "availableStock": 8,
     "careLevel": "Medium",
     "description": "A graceful indoor plant with white flowers that bloom year-round. Ideal for bright, indirect sunlight and regular watering.",
-    "image": "https://i.postimg.cc/3xg0XFtL/peace-lily.png",
+    "image": "/public/assets/peacelily.png",
     "providerName": "NatureNest"
   },
   {
@@ -32,7 +32,7 @@
     "availableStock": 12,
     "careLevel": "Easy",
     "description": "A healing plant known for its medicinal properties. Needs minimal watering and lots of sunlight — perfect for sunny windowsills.",
-    "image": "https://i.postimg.cc/T1mZJqZk/aloe-vera.png",
+    "image": "/public/assets/aloevera.png",
     "providerName": "Leaf & Love"
   },
   {
@@ -44,7 +44,7 @@
     "availableStock": 14,
     "careLevel": "Easy",
     "description": "An elegant hanging plant with arching green and white leaves. Known for purifying air and being pet-friendly.",
-    "image": "https://i.postimg.cc/V6rR4L9v/spider-plant.png",
+    "image": "/public/assets/spiderPlant.png",
     "providerName": "GreenAura Hub"
   },
   {
@@ -56,7 +56,7 @@
     "availableStock": 6,
     "careLevel": "Medium",
     "description": "A bold, glossy-leafed plant that adds a modern touch to any home decor. Prefers bright light and occasional watering.",
-    "image": "https://i.postimg.cc/3wbDGH8L/rubber-plant.png",
+    "image": "/public/assets/rubberPlant.png",
     "providerName": "EcoLeaf Studio"
   },
   {
@@ -68,7 +68,44 @@
     "availableStock": 9,
     "careLevel": "Very Easy",
     "description": "A nearly indestructible indoor plant that grows well even in low light. Perfect for beginners or busy plant lovers.",
-    "image": "https://i.postimg.cc/1RVLRHDM/zz-plant.png",
+    "image": "/public/assets/zz.png",
     "providerName": "The Green Den"
+  },
+  {
+    "plantId": 7,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 20,
+    "rating": 4.9,
+    "availableStock": 9,
+    "careLevel": "Very Easy",
+    "description": "A nearly indestructible indoor plant that grows well even in low light. Perfect for beginners or busy plant lovers.",
+    "image": "/public/assets/zz.png",
+    "providerName": "The Green Den"
+  },
+   {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy and low-maintenance plant that thrives in low light. Excellent for improving indoor air quality by removing toxins.",
+    "image": "/public/assets/snakePlant.png",
+    "providerName": "UrbanGreen Studio"
+  },
+   {
+    "plantId": 4,
+    "plantName": "Spider Plant",
+    "category": "Hanging Plant",
+    "price": 16,
+    "rating": 4.6,
+    "availableStock": 14,
+    "careLevel": "Easy",
+    "description": "An elegant hanging plant with arching green and white leaves. Known for purifying air and being pet-friendly.",
+    "image": "/public/assets/spiderPlant.png",
+    "providerName": "GreenAura Hub"
   }
+
 ]

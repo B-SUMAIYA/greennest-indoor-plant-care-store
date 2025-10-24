@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+a.active{
+  color: blue;
+  font-weight: 100;
+  border-bottom: 2px solid blue;
+}
