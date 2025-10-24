@@ -102,33 +102,7 @@ Explore plants</Link>
                     </div>
                 </div>
             </section>
-            {/* specialist */}
-            <section>
-             <div className=' container mx-auto text-center px-4 '>
-                    <h1 className='text-2xl font-bold text-blue-800 mb-6'>Meet Our Green Expert</h1>
-                    <div className="flex flex-col md:flex-row justify-between gap-4  items-center ">
-                        <div className='p-6 bg-black mb-4 rounded-2xl shadow '>
-                            <img src="/public/assets/specialist1.png" alt="" className='object-cover h-full w-full'/>
-                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Dr. jane Hutto</h3>
-                            <p className='text-gray-500'>They Are specialist in planting and taking care of fruits ,flower , vegitable and Tress</p>
-
-                        </div>
-                        <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
-                            <img src="/public/assets/specialist2.png" alt="" className='object-cover h-full w-full'/>
-                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Luthar brukbhan</h3>
-                            <p className='text-gray-500'>They study the structure, Growth, reprroduction, and role of plants in the Enviroment</p>
-
-                        </div>
-                        <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
-                            <img src="/public/assets/specialist3.png" alt="" className='object-cover h-full w-full'/>
-                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Peter Thomas</h3>
-                            <p className='text-gray-500'>They work on tree health , pruning ,planting, and desease management</p>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* plant of the week */}
+                {/* plant of the week */}
             <section>
                  <div className='container mx-auto text-center px-4 '>
                     <h1 className='text-3xl font-bold text-green-600 mb-3'>Plants Of The Week</h1>
@@ -158,6 +132,33 @@ Explore plants</Link>
                 </div>
                 
             </section>
+            {/* specialist */}
+            <section>
+             <div className=' container mx-auto text-center px-4 '>
+                    <h1 className='text-2xl font-bold text-blue-800 mb-6'>Meet Our Green Expert</h1>
+                    <div className="flex flex-col md:flex-row justify-between gap-4  items-center ">
+                        <div className='p-6 bg-black mb-4 rounded-2xl shadow '>
+                            <img src="/public/assets/specialist1.png" alt="" className='object-cover h-full w-full'/>
+                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Dr. jane Hutto</h3>
+                            <p className='text-gray-500'>They Are specialist in planting and taking care of fruits ,flower , vegitable and Tress</p>
+
+                        </div>
+                        <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
+                            <img src="/public/assets/specialist2.png" alt="" className='object-cover h-full w-full'/>
+                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Luthar brukbhan</h3>
+                            <p className='text-gray-500'>They study the structure, Growth, reprroduction, and role of plants in the Enviroment</p>
+
+                        </div>
+                        <div className='p-6  bg-black mb-4 rounded-2xl shadow'>
+                            <img src="/public/assets/specialist3.png" alt="" className='object-cover h-full w-full'/>
+                            <h3 className='font-semibold text-lg mb-2 text-blue-700'>Peter Thomas</h3>
+                            <p className='text-gray-500'>They work on tree health , pruning ,planting, and desease management</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
             
     </div>
     );
